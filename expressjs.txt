@@ -1,0 +1,8 @@
+Express js is a web application freamwork for node js.
+ It provides some features that make web application development fast and easy. 
+ Express built on top of node js. 
+
+ Express features:
+It provide basic web server creation or a routing tool which is essential bear on node js.
+It is vary friendly to functional programing.
+Express can build RESTful api fastr.
