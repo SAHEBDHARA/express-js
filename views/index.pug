@@ -1,0 +1,54 @@
+//- doctype html 
+//- html 
+//-   title #{title}
+//-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+//-  body 
+//-    div.text-center 
+//-    h1.h1.py-4 Simple Form 
+//-    div.container.text-center.w-25 
+//-    form(method='POST',action='/form_submit')
+//-      div.form-group
+//-      input(type='text',name='username',class='form-control',value='',placeholder='Username')
+//-      div.form-group
+//-      input(type='text',name='email',class='form-control',value='',placeholder='Email')
+//-         div.form-group
+//-      input(type='submit',class='btn btn-pimary',value='Submit')
+
+
+head
+  meta(charset='utf-8')
+  title #{title}
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+
+  body
+    //- p test
+    .modal-dialog
+        .modal-content
+          //- / // Modal Headerk
+          .modal-header
+            button.close(type="button", data-dismiss="modal")
+              //- span(aria-hidden="true") ×
+              span.sr-only Close
+            h4#myModalLabel.modal-title
+              | Edit Resource
+          //- / Modal Body
+          .modal-body
+            //- //#editForm.form(role='form' method='GET' action='https://www.google.com/')
+            form(role='form' method='POST' action='/form_submit')
+              div.form-group
+                label(for='name') Name:
+                input#name.form-control(type='text', placeholder='name' name='name')
+              div.form-group
+                label(for='email') Email:
+                input#email.form-control(type='email', placeholder='name@email.com' name='email')
+              button.btn.btn-primary(type="submit", name="asdf") Submit
+              //- button.btn.btn-default(type="button", data-dismiss="modal")
+              //-   | Close
+          //- // Modal Footer
+          //- .modal-footer
+          //-   h4 footer
+
+    //- // footer
+    //- p.foot.text-xs-center test

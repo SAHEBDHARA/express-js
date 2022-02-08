@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon middleware.js"
+    "start": "nodemon sessiona.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
   }
 }
