@@ -17,5 +17,5 @@ app.use('/public',express.static('static'))
 // this commant for the dir under the rooot file 
 
 app.get('/',(req,res)=>{
- res.send(public)
+ res.send(static)
 }).listen(3000,()=>console.log("started on 3000"))
